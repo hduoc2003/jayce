@@ -1,0 +1,16 @@
+[package]
+name = "jayce"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.21", features = ["derive"] }
+anyhow = { version = "1.0.93" }
+tokio = { version = "1.41.1" }
+aptos-sdk = { git = "https://github.com/aptos-labs/aptos-core", rev = "28abb7db64af8de81a6bc76c6b2d6600181ac578" }
+serde = { version = "1.0.215" }
+config = { version = "0.14.1" }
+
+[patch.crates-io]
+merlin = { git = "https://github.com/aptos-labs/merlin" }
+x25519-dalek = { git = "https://github.com/Tranduy1dol/x25519-dalek", branch = "zeroize_v1.7" }
